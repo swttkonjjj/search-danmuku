@@ -40,10 +40,14 @@ function search() {
     <el-input v-model="input" placeholder="Please Input" />
     <el-button :icon="Search" @click="search()">Search</el-button>
   </el-container>
-<div v-for=" anime in animes">
+  
+  <el-row>
+<el-col span="8" v-for=" anime in animes">
   <HelloWorld :name="anime.animeTitle" :img-url="anime.imageUrl" :episodes= anime.episodes />
   <!-- {{anime.animeTitle}}{{anime.imageUrl}} -->
-</div>
+</el-col>
+</el-row>
+
 </template>
 
 <style scoped>
