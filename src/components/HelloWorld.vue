@@ -71,7 +71,7 @@ function showEp(eps: any) {
     </div>
   </el-card>
 
-  <el-dialog v-model="dialogTableVisible">
+  <el-dialog v-model="dialogTableVisible" span="8">
     <el-table :data="data" highlight-current-row @current-change="handleCurrentChange">
       <el-table-column property="episodeTitle" label="集数标题" width="400" />
       <el-table-column v-if="false" property="episodeId" label="集数标题" width="400" />
