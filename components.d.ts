@@ -11,15 +11,11 @@ declare module '@vue/runtime-core' {
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElCol: typeof import('element-plus/es')['ElCol']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
     ElDialog: typeof import('element-plus/es')['ElDialog']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElInput: typeof import('element-plus/es')['ElInput']
     ElRow: typeof import('element-plus/es')['ElRow']
     ElTable: typeof import('element-plus/es')['ElTable']
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    Search: typeof import('./src/components/Search.vue')['default']
   }
 }
