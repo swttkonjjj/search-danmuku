@@ -71,13 +71,17 @@ function showEp(eps: any) {
     </div>
   </el-card>
 
-  <el-dialog v-model="dialogTableVisible" span="8">
-    <el-table :data="data" highlight-current-row @current-change="handleCurrentChange">
-      <el-table-column property="episodeTitle" label="集数标题" width="400" />
-      <el-table-column v-if="false" property="episodeId" label="集数标题" width="400" />
+  <el-dialog v-model="dialogTableVisible" style="width:33%">
+    <el-table :data="data" highlight-current-row @current-change="handleCurrentChange" >
+      <el-table-column property="episodeTitle" label="集数标题"  :label-class-name="'center-label'"/>
+      <el-table-column v-if="false" property="episodeId" label="集数标题"  />
     </el-table>
     <el-button @click="download">下载选中集数的弹幕</el-button>
   </el-dialog>
 </template>
 
-
+<style scoped>
+.center-label {
+  text-align: center; /* 将文本居中对齐 */
+}
+</style>
