@@ -13,4 +13,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
-})
+  base: 'https://swttkonjjj.github.io/search-danmuku/',
+});
+
+
